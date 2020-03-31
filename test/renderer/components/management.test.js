@@ -6,18 +6,7 @@ import sinon from 'sinon'
 /* eslint-disable no-undef */
 describe('Management', () => {
   const clickCallback = sinon.spy()
-<<<<<<< HEAD
   const wrapper = mount(<Management currentProjectPath={''} onCloseClicked={clickCallback} />)
-=======
-  const wrapper = shallow(<Management currentProjectPath={''} onCloseClicked={clickCallback} />)
-  it('verify import button', () => {
-    assert(wrapper.containsMatchingElement(<Button id="importProject" variant="outlined" color="primary"
-      style={{ float: 'right', marginRight: '1em', marginLeft: '2px' }}
-      startIcon={<ImportProjectIcon />} >
-      Import
-    </Button>), true, 'Verify import button')
-  })
->>>>>>> 0.6.0/ol
 
   it('verify sidebar section', () => {
     const section = wrapper.find('.makeStyles-sidebar-2')
