@@ -6,7 +6,7 @@ import sinon from 'sinon'
 /* eslint-disable no-undef */
 describe('Management', () => {
   const clickCallback = sinon.spy()
-  const wrapper = mount(<Management currentProjectPath={''} onCloseClicked={clickCallback} />)
+  const wrapper = shallow(<Management currentProjectPath={''} onCloseClicked={clickCallback} />)
 
   it('verify sidebar section', () => {
     const section = wrapper.find('.makeStyles-sidebar-2')
